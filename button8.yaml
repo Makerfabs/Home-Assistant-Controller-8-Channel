@@ -1,0 +1,32 @@
+binary_sensor:
+  - platform: gpio
+    pin: 35
+    name: "HA1"
+  
+  - platform: gpio
+    pin: 34
+    name: "HA2"
+
+  - platform: gpio
+    pin: 39
+    name: "HA3"
+
+  - platform: gpio
+    pin: 23
+    name: "HA4"
+
+  - platform: gpio
+    pin: 26
+    name: "HA5"
+
+  - platform: gpio
+    pin: 27
+    name: "HA6"
+
+  - platform: gpio
+    pin: 14
+    name: "HA7"
+
+  - platform: gpio
+    pin: 4
+    name: "HA8"
