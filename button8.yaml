@@ -1,3 +1,39 @@
+esphome:
+  name: ha-controller-8-channel
+  friendly_name: HA-Controller-8-Channel
+
+esp32:
+  board: esp32dev
+  framework:
+    type: esp-idf
+    # version: 5.4.2
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "ThisVcT9PSAaoBdLWT0uF9MP6F19CEyddxtK0Px/fj0="
+
+ota:
+  - platform: esphome
+    password: "c6f3be95fee06a1f704723c04b4af956"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Ha-Controller-8-Channel"
+    password: "Ep8nfEyhU4Rb"
+
+captive_portal:
+
+web_server:
+  port: 80
+
 binary_sensor:
   - platform: gpio
     pin: 35
@@ -30,3 +66,4 @@ binary_sensor:
   - platform: gpio
     pin: 4
     name: "HA8"
+    
